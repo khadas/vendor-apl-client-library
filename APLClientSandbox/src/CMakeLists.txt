@@ -41,7 +41,8 @@ if(FETCH_CONTENT)
     FetchContent_MakeAvailable(webstocketpp)
 endif()
 
-target_compile_definitions(APLClientSandbox PUBLIC ASIO_STANDALONE)
+# aml use boost_asio
+# target_compile_definitions(APLClientSandbox PUBLIC ASIO_STANDALONE)
 target_include_directories(APLClientSandbox PUBLIC
     "${ASIO_INCLUDE_DIR}"
     "${WEBSOCKETPP_INCLUDE_DIR}")
