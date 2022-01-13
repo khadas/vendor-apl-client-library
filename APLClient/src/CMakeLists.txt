@@ -69,3 +69,6 @@ if(APL_CORE)
 
     add_definitions(-DAPL_CORE)
 endif()
+
+# install target
+asdk_install_targets(APLClient TRUE)
