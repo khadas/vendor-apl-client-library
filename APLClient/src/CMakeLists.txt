@@ -70,5 +70,9 @@ if(APL_CORE)
     add_definitions(-DAPL_CORE)
 endif()
 
-# install target
-asdk_install_targets(APLClient TRUE)
+if (CMAKE_INSTALL_PREFIX)
+    install(DIRECTORY "${PROJECT_SOURCE_DIR}/include/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
+    install(DIRECTORY "${APLCORE_INCLUDE_DIR}/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
+    install(DIRECTORY "${APLCORE_BUILD_INCLUDE_DIR}/" DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
+    install(TARGETS APLClient DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
+endif()

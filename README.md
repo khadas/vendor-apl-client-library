@@ -1,8 +1,15 @@
 # Alexa Presentation Language (APL) Client Library
 
+<p>
+ <a href="https://github.com/alexa/apl-client-library/tree/v1.8.2" alt="version">
+ <img src="https://img.shields.io/badge/stable%20version-1.8.2-brightgreen" /></a>
+ <a href="https://github.com/alexa/apl-core-library/tree/v1.8.1" alt="APLCore">
+ <img src="https://img.shields.io/badge/apl%20core%20library-1.8.1-navy" /></a>
+</p>
+ 
 ## Introduction
 
-The APL Client Library provides communication between APLViewhostWeb and apl-core-library. It's job is making sure that APL Documents are correctly rendered and getting updated based on user's interaction.
+The APL Client Library provides communication between APLViewhostWeb and apl-core-library. Its job is making sure that APL Documents are correctly rendered and getting updated based on user's interaction.
 
 The APL Client Library package in this GitHub repo includes:
 
@@ -61,7 +68,7 @@ The APL Client Library depends on the following additional GitHub repos:
     ```
 1. Build apl-client
    ```
-   make -j8
+   make
    ```
 1. Run sandbox server
    ```
